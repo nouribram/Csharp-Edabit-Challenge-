@@ -27,6 +27,7 @@ public class Program
     public static void Main(string[] args)
     {
         // Testing the function with different values
+        
         Console.WriteLine(NextNumber(-1));   // Output: 0
         Console.WriteLine(NextNumber(99));   // Output: 100
     }

@@ -6,22 +6,18 @@
 // - Accumulate the sum in a single pass.
 // --------------------------------------------------
 
+
 using System;
 
-public class AbsoluteSumChallenge
+public class Program
 {
-    public static int AbsoluteSum(int[] numbers)
+    public static int GetAbsSum(int[] arr)
     {
         int sum = 0;
-        foreach (int num in numbers)
+        foreach (int num in arr)
+        {
             sum += Math.Abs(num);
+        }
         return sum;
-    }
-
-    public static void Main(string[] args)
-    {
-        // Test cases
-        Console.WriteLine(AbsoluteSum(new int[] { -3, -4, -10, 0 })); // 17
-        Console.WriteLine(AbsoluteSum(new int[] { }));                // 0
     }
 }
